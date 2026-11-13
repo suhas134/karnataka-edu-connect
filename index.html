@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Karnataka EduConnect & AI Enquiry Chatbot | Bengaluru, Belagavi, Kalaburagi & Mysuru Divisions</title>
+  <meta name="description"
+    content="Comprehensive higher education directory and AI admissions portal across Karnataka's 4 Administrative Divisions: Bengaluru, Belagavi, Kalaburagi, and Mysuru. Explore top universities, engineering, medical, degree, and polytechnic colleges with courses, cutoffs, fees, and hostels.">
+  <meta name="keywords"
+    content="Karnataka colleges, Bengaluru division colleges, Belagavi division colleges, Kalaburagi division colleges, Mysuru division colleges, RVCE, IISc, BEC Bagalkot, VTU, BMCRI, SJCE Mysuru, NITK Surathkal, PDA Kalaburagi, KCET cutoff, NEET medical Karnataka, Karnataka college enquiry chatbot">
+  <meta name="author" content="Karnataka Higher Education Connect Portal">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Karnataka College Connect & AI Enquiry Portal - 4 Divisions">
+  <meta property="og:description"
+    content="Explore top universities, engineering, medical, AYUSH, degree, and polytechnic colleges across Bengaluru, Belagavi, Kalaburagi, and Mysuru divisions with smart AI assistance.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       APP HEADER & NAVIGATION
+       ============================================================ -->
+  <header class="app-header">
+    <div class="container header-content">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-wrap" title="Karnataka Higher Education Connect">
+        <div class="brand-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Karnataka EduConnect</h1>
+          <p>೪ ಕಂದಾಯ ವಿಭಾಗಗಳು & AI Chatbot</p>
+        </div>
+      </a>
+
+      <!-- Header Navigation & Actions -->
+      <nav class="header-nav-actions">
+        <a href="#divisions" class="nav-link-btn d-none-mobile">
+          <i class="fas fa-map-marked-alt"></i> <span>4 Divisions</span>
+        </a>
+        <a href="#directory" class="nav-link-btn d-none-mobile">
+          <i class="fas fa-university"></i> <span>Colleges</span>
+        </a>
+        <a href="#calculator" class="nav-link-btn d-none-mobile">
+          <i class="fas fa-calculator"></i> <span>Eligibility</span>
+        </a>
+        <a href="#admissions" class="nav-link-btn d-none-mobile">
+          <i class="fas fa-file-signature"></i> <span>Admissions</span>
+        </a>
+        <button class="nav-link-btn" id="bookmarksNavBtn" title="Saved Colleges">
+          <i class="fas fa-heart text-danger"></i> <span>Saved</span>
+          <span class="badge-count" id="bookmarksCountBadge">0</span>
+        </button>
+        <button class="lang-btn" id="langToggleBtn" title="Toggle Language (English / ಕನ್ನಡ)">
+          ಕನ್ನಡ
+        </button>
+        <button class="btn-icon" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO BANNER & SEARCH SECTION
+       ============================================================ -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-badge">
+          <i class="fas fa-sparkles"></i> 4 Official Administrative Divisions of Karnataka
+        </div>
+        <h2 class="hero-title">
+          Explore Colleges Across Karnataka's <br>
+          <span class="gradient-text">4 Administrative Divisions</span>
+        </h2>
+        <p class="hero-subtitle">
+          Your single-window state portal for premier Engineering, Medical, Dental, AYUSH, Degree, and Polytechnic
+          institutions categorized across <strong>Bengaluru, Belagavi, Kalaburagi, and Mysuru</strong> divisions.
+        </p>
+
+        <!-- Live Metrics Bar -->
+        <div class="hero-stats-strip">
+          <div class="stat-pill">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Karnataka Divisions</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-num">31</div>
+            <div class="stat-label">Districts Covered</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Premier Institutions</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Free AI Assistance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         THE 4 ADMINISTRATIVE DIVISIONS SHOWCASE SECTION
+         ============================================================ -->
+    <section class="section-wrapper" id="divisions">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-badge">Karnataka Regional Architecture</span>
+          <h2 class="section-main-title">The 4 Administrative Divisions of Karnataka</h2>
+          <p class="section-desc">
+            ಕರ್ನಾಟಕದ ೪ ಅಧಿಕೃತ ಕಂದಾಯ ವಿಭಾಗಗಳು — Select a division below to instantly explore its universities, colleges,
+            and admission pathways.
+          </p>
+        </div>
+
+        <div class="divisions-showcase-grid">
+          <!-- 1. Bengaluru Division -->
+          <div class="division-card-interactive bengaluru" onclick="window.setDivisionFilter('bengaluru')">
+            <div class="division-card-header">
+              <div class="div-icon-wrap"><i class="fas fa-city"></i></div>
+              <div class="div-header-meta">
+                <span class="div-pill-tag">Division 01</span>
+                <h3>Bengaluru Division</h3>
+                <small class="text-kannada">ಬೆಂಗಳೂರು ವಿಭಾಗ</small>
+              </div>
+            </div>
+            <p class="division-card-desc">
+              India's Silicon Valley and premier higher education capital. Home to iconic degree & GFGCs, autonomous VTU
+              engineering institutions (RVCE, BMSCE, MSRIT, DSCE, BIT), medical giants (BMCRI, St. John's), AYUSH &
+              Ayurvedic hospitals (GAMC, Sri Sri, SDM), and NLSIU Law.
+            </p>
+            <div class="div-districts-box">
+              <strong>9 Districts:</strong> Bengaluru Urban, Bengaluru Rural, Ramanagara, Tumakuru, Shivamogga,
+              Davanagere, Kolar, Chikkaballapura, Chitradurga.
+            </div>
+            <div class="div-top-institutes">
+              <span>St. Joseph's</span>
+              <span>Mount Carmel</span>
+              <span>Christ Univ</span>
+              <span>Maharani Univ</span>
+              <span>National College</span>
+              <span>GFGC Central</span>
+              <span>RVCE (VTU)</span>
+              <span>BMSCE (VTU)</span>
+              <span>MSRIT (VTU)</span>
+              <span>DSCE (VTU)</span>
+              <span>BMCRI</span>
+              <span>St. John's Medical</span>
+              <span>GAMC Ayurveda</span>
+              <span>NLSIU Law</span>
+            </div>
+            <div class="div-card-footer">
+              <span class="btn-text-link">Explore Bengaluru Colleges <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- 2. Belagavi Division -->
+          <div class="division-card-interactive belagavi" onclick="window.setDivisionFilter('belagavi')">
+            <div class="division-card-header">
+              <div class="div-icon-wrap"><i class="fas fa-fort-awesome"></i></div>
+              <div class="div-header-meta">
+                <span class="div-pill-tag">Division 02</span>
+                <h3>Belagavi Division</h3>
+                <small class="text-kannada">ಬೆಳಗಾವಿ ವಿಭಾಗ</small>
+              </div>
+            </div>
+            <p class="division-card-desc">
+              North-Western Karnataka's technical and cultural capital. Headquarters of VTU, historic engineering
+              foundations (BEC Bagalkot), medical giants, and heritage universities.
+            </p>
+            <div class="div-districts-box">
+              <strong>7 Districts:</strong> Belagavi, Bagalkot, Dharwad, Vijayapura, Gadag, Haveri, Uttara Kannada
+              (Karwar).
+            </div>
+            <div class="div-top-institutes">
+              <span>VTU HQs</span>
+              <span>BEC Bagalkot (VTU)</span>
+              <span>KLS GIT (VTU)</span>
+              <span>KLE Tech BVB</span>
+              <span>SDMCET (VTU)</span>
+              <span>BLDEA Vijayapura</span>
+              <span>SNMC Medical</span>
+              <span>JNMC Belagavi</span>
+            </div>
+            <div class="div-card-footer">
+              <span class="btn-text-link">Explore Belagavi Colleges <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- 3. Kalaburagi Division -->
+          <div class="division-card-interactive kalaburgi" onclick="window.setDivisionFilter('kalaburgi')">
+            <div class="division-card-header">
+              <div class="div-icon-wrap"><i class="fas fa-landmark-dome"></i></div>
+              <div class="div-header-meta">
+                <span class="div-pill-tag">Division 03</span>
+                <h3>Kalaburagi Division</h3>
+                <small class="text-kannada">ಕಲಬುರಗಿ ವಿಭಾಗ (Kalyana Karnataka)</small>
+              </div>
+            </div>
+            <p class="division-card-desc">
+              The historical Kalyana Karnataka region entitled to Article 371(J) reservation. Hosts Central University
+              of Karnataka, premier medical hospitals, and autonomous VTU engineering colleges.
+            </p>
+            <div class="div-districts-box">
+              <strong>7 Districts:</strong> Kalaburagi, Bidar, Ballari, Raichur, Koppal, Yadgir, Vijayanagara.
+            </div>
+            <div class="div-top-institutes">
+              <span>CUK Kalaburagi</span>
+              <span>PDA College (VTU)</span>
+              <span>GNDEC Bidar (VTU)</span>
+              <span>BKIT Bhalki (VTU)</span>
+              <span>RYMEC Ballari (VTU)</span>
+              <span>BITM Ballari (VTU)</span>
+              <span>MR Medical</span>
+              <span>ESIC Medical</span>
+              <span>VIMS Ballari</span>
+            </div>
+            <div class="div-card-footer">
+              <span class="btn-text-link">Explore Kalaburagi Colleges <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- 4. Mysuru Division -->
+          <div class="division-card-interactive mysuru" onclick="window.setDivisionFilter('mysuru')">
+            <div class="division-card-header">
+              <div class="div-icon-wrap"><i class="fas fa-crown"></i></div>
+              <div class="div-header-meta">
+                <span class="div-pill-tag">Division 04</span>
+                <h3>Mysuru Division</h3>
+                <small class="text-kannada">ಮೈಸೂರು ವಿಭಾಗ</small>
+              </div>
+            </div>
+            <p class="division-card-desc">
+              Celebrated for century-old academic traditions and coastal educational hubs. Home to University of Mysore,
+              SJCE / JSS STU, NIE, VVCE, MCE Hassan, PESCE Mandya, Sahyadri, and NITK Surathkal.
+            </p>
+            <div class="div-districts-box">
+              <strong>8 Districts:</strong> Mysuru, Dakshina Kannada (Mangaluru), Udupi, Hassan, Mandya, Chikkamagaluru,
+              Chamarajanagar, Kodagu.
+            </div>
+            <div class="div-top-institutes">
+              <span>SJCE (JSS STU)</span>
+              <span>NIE Mysuru (VTU)</span>
+              <span>VVCE Mysuru (VTU)</span>
+              <span>MCE Hassan (VTU)</span>
+              <span>PESCE Mandya (VTU)</span>
+              <span>Sahyadri (VTU)</span>
+              <span>SJEC Vamanjoor</span>
+              <span>NITK Surathkal</span>
+              <span>MMCRI Mysuru</span>
+              <span>KMC Manipal</span>
+            </div>
+            <div class="div-card-footer">
+              <span class="btn-text-link">Explore Mysuru Colleges <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEARCH & FILTER HUB WITH 4-DIVISION NAVIGATION TABS
+         ============================================================ -->
+    <section class="search-filter-section" id="directory">
+      <div class="container">
+        <!-- Division Selector Tabs Bar -->
+        <div class="division-tabs-bar" id="divisionFilterContainer">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <!-- Active Division Info Banner -->
+        <div class="division-banner-wrap" id="divisionBannerContainer">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <!-- Main Search Bar -->
+        <div class="search-bar-wrap">
+          <i class="fas fa-search search-icon-inside"></i>
+          <input type="text" id="searchInput" class="search-main-input"
+            placeholder="Search by College Name, Stream (e.g. RVCE, IISc, BEC, SNMC, MMCRI, NITK), District or Division..."
+            autocomplete="off" />
+          <button id="clearSearchBtn" class="clear-search-btn" style="display: none;" title="Clear search">
+            <i class="fas fa-times-circle"></i>
+          </button>
+        </div>
+
+        <!-- Stream Category Filter Pills -->
+        <div class="stream-pills-bar" id="streamFilterContainer">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Secondary Controls Filter Bar -->
+        <div class="filter-controls-row">
+          <div class="filter-select-group">
+            <label for="talukSelect" class="d-none">Filter by District</label>
+            <select id="talukSelect" class="custom-select">
+              <option value="all">All Districts (ಸಮಗ್ರ ಜಿಲ್ಲೆಗಳು)</option>
+            </select>
+
+            <label for="typeSelect" class="d-none">Filter by Management Type</label>
+            <select id="typeSelect" class="custom-select">
+              <option value="all">All Management Types</option>
+              <option value="govt">Government & Central Institutes</option>
+              <option value="aided">Private Aided (JSS / BVVS / RSST / HKE)</option>
+              <option value="autonomous">Autonomous Institutes</option>
+              <option value="private">Private & Deemed Universities</option>
+            </select>
+
+            <label for="sortSelect" class="d-none">Sort Results</label>
+            <select id="sortSelect" class="custom-select">
+              <option value="rating-desc">Sort: Highest Rated ★</option>
+              <option value="est-asc">Sort: Oldest Established</option>
+              <option value="name-asc">Sort: Name (A to Z)</option>
+            </select>
+          </div>
+
+          <div class="results-meta-wrap">
+            <span class="results-count-text" id="resultsCount">Loading colleges...</span>
+            <button class="btn btn-outline btn-sm" id="resetFiltersBtn" title="Reset all filters">
+              <i class="fas fa-redo"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Colleges Cards Grid Container (Divided by Division Sections) -->
+        <div class="colleges-grid-container" id="collegesGrid">
+          <!-- Dynamic College Cards rendered by app.js -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results-state" id="noResultsState" style="display: none;">
+          <i class="fas fa-search-minus no-results-icon"></i>
+          <h3>No Colleges Match Your Criteria</h3>
+          <p class="text-secondary mt-2">Try adjusting your search terms, changing the division, or resetting filters.
+          </p>
+          <button class="btn btn-primary btn-sm mt-3" onclick="document.getElementById('resetFiltersBtn').click()">
+            <i class="fas fa-redo"></i> Show All Karnataka Colleges
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ADMISSION ELIGIBILITY & KCET/NEET CALCULATOR
+         ============================================================ -->
+    <section class="section-wrapper" id="calculator">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-badge">Statewide Student Tool</span>
+          <h2 class="section-main-title">Admission Eligibility Calculator</h2>
+          <p class="section-desc">
+            Enter your qualifying marks, reservation category, and stream preference to instantly discover which
+            institutions across Karnataka you qualify for.
+          </p>
+        </div>
+
+        <div class="calculator-card">
+          <form id="eligibilityCalcForm">
+            <div class="calc-form-grid">
+              <div class="form-group">
+                <label for="calcQual">Qualifying Examination Completed</label>
+                <select id="calcQual" class="form-control" required>
+                  <option value="puc_science_pcm">12th / 2nd PUC (Science - PCM)</option>
+                  <option value="puc_science_pcb">12th / 2nd PUC (Science - PCB)</option>
+                  <option value="puc_commerce">12th / 2nd PUC (Commerce)</option>
+                  <option value="puc_arts">12th / 2nd PUC (Arts / Humanities)</option>
+                  <option value="sslc">10th / SSLC (For Polytechnic Diploma)</option>
+                  <option value="graduation">Any Graduation Degree (For MBA / MCA / M.Tech)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcPercentage">Aggregate Percentage Marks (%)</label>
+                <input type="number" id="calcPercentage" class="form-control" placeholder="e.g. 82.5" min="35" max="100"
+                  step="0.1" required>
+              </div>
+
+              <div class="form-group">
+                <label for="calcCategory">Reservation Category</label>
+                <select id="calcCategory" class="form-control">
+                  <option value="gm">General Merit (GM)</option>
+                  <option value="371j">Kalyana Karnataka (Article 371-J Quota)</option>
+                  <option value="obc">OBC (Cat-1, 2A, 2B, 3A, 3B)</option>
+                  <option value="sc_st">SC / ST (Schedule Caste & Tribe)</option>
+                  <option value="minority">Minority (Muslim / Christian / Jain)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcInterest">Preferred Stream / Area of Study</label>
+                <select id="calcInterest" class="form-control">
+                  <option value="all">All Available Streams (Statewide)</option>
+                  <option value="engineering">B.E. Engineering & Tech</option>
+                  <option value="medical">Medical / AYUSH / Nursing / Pharmacy</option>
+                  <option value="degree">Degree & Research (BCA, B.Com, B.Sc, BBA)</option>
+                  <option value="diploma">Polytechnic 3-Yr Diploma</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-magic"></i> Calculate Eligible Colleges & Cutoffs
+              </button>
+            </div>
+          </form>
+
+          <div id="calcResultsContainer" class="mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         KARNATAKA ENTRANCE EXAMS & ADMISSIONS ROADMAP
+         ============================================================ -->
+    <section class="section-wrapper" id="admissions">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-badge">Admissions Roadmap</span>
+          <h2 class="section-main-title">Karnataka Entrance Exams & Portals</h2>
+          <p class="section-desc">
+            Official centralized portals governing admissions to colleges across all 4 Karnataka divisions.
+          </p>
+        </div>
+
+        <div class="exams-guide-grid">
+          <div class="exam-guide-card">
+            <div class="exam-title-row">
+              <div class="exam-icon"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <h4>KCET (KEA Karnataka)</h4>
+                <span class="text-muted">kea.kar.nic.in</span>
+              </div>
+            </div>
+            <p>For B.E. (RVCE, SJCE, BEC, PDA, SIT, NIE), B.Pharm, B.Sc Nursing, and Agriculture. Conducted annually
+              with 3 rounds of counseling.</p>
+          </div>
+
+          <div class="exam-guide-card">
+            <div class="exam-title-row">
+              <div class="exam-icon"><i class="fas fa-stethoscope"></i></div>
+              <div>
+                <h4>NEET UG / MCC</h4>
+                <span class="text-muted">National / KEA State</span>
+              </div>
+            </div>
+            <p>Mandatory for MBBS (BMCRI, MMCRI, VIMS, SNMC, MRMC), BDS (PMNM), and BAMS with centralized seat
+              allotment.</p>
+          </div>
+
+          <div class="exam-guide-card">
+            <div class="exam-title-row">
+              <div class="exam-icon"><i class="fas fa-book-reader"></i></div>
+              <div>
+                <h4>UUCMS Karnataka Portal</h4>
+                <span class="text-muted">uucms.karnataka.gov.in</span>
+              </div>
+            </div>
+            <p>Unified online single-window admission portal for all general degree programs (BA, B.Com, B.Sc, BCA, BBA,
+              MSW) in Government and Aided Colleges.</p>
+          </div>
+
+          <div class="exam-guide-card">
+            <div class="exam-title-row">
+              <div class="exam-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <h4>Article 371(J) Portal</h4>
+                <span class="text-muted">Kalyana Karnataka Quota</span>
+              </div>
+            </div>
+            <p>Special constitutional reservations (8% statewide & 70% regional quota) for students native to Kalaburagi
+              Division districts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       COLLEGE DETAIL MODAL
+       ============================================================ -->
+  <div class="app-modal-overlay" id="collegeModal" role="dialog" aria-modal="true">
+    <div class="modal-container modal-wide">
+      <div class="modal-header-bar">
+        <span class="modal-header-title"><i class="fas fa-university text-primary"></i> Detailed Institution
+          Information</span>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body-scrollable" id="modalBody">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       COLLEGE COMPARISON MODAL
+       ============================================================ -->
+  <div class="app-modal-overlay" id="compareModal" role="dialog" aria-modal="true">
+    <div class="modal-container modal-wide">
+      <div class="modal-header-bar">
+        <span class="modal-header-title"><i class="fas fa-balance-scale text-primary"></i> Side-by-Side College
+          Comparison</span>
+        <button class="modal-close-btn" id="compareModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body-scrollable" id="compareModalBody">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ADMISSION ENQUIRY & PRINTABLE SLIP MODAL
+       ============================================================ -->
+  <div class="app-modal-overlay" id="inquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header-bar">
+        <span class="modal-header-title"><i class="fas fa-file-alt text-primary"></i> Student Admission Enquiry
+          Application</span>
+        <button class="modal-close-btn" id="inquiryModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body-scrollable">
+        <form id="inquiryForm">
+          <div class="calc-form-grid">
+            <div class="form-group">
+              <label for="inquiryCollegeSelect">Target College in Karnataka</label>
+              <select id="inquiryCollegeSelect" class="form-control" required></select>
+            </div>
+            <div class="form-group">
+              <label for="inqCourse">Desired Course / Branch</label>
+              <input type="text" id="inqCourse" class="form-control"
+                placeholder="e.g. B.E. Computer Science, MBBS, B.Com, B.Pharm" required>
+            </div>
+            <div class="form-group">
+              <label for="inqName">Student Full Name</label>
+              <input type="text" id="inqName" class="form-control" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+              <label for="inqPhone">Mobile Number (WhatsApp Enabled)</label>
+              <input type="tel" id="inqPhone" class="form-control" placeholder="e.g. 9876543210" pattern="[0-9]{10}"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="inqEmail">Email Address</label>
+              <input type="email" id="inqEmail" class="form-control" placeholder="student@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="inqMarks">Previous Examination Marks / %</label>
+              <input type="number" id="inqMarks" class="form-control" placeholder="e.g. 84%" min="35" max="100"
+                step="0.1" required>
+            </div>
+            <div class="form-group">
+              <label for="inqTaluk">Home District / Native Place</label>
+              <input type="text" id="inqTaluk" class="form-control"
+                placeholder="e.g. Bengaluru, Belagavi, Kalaburagi, Mysuru" required>
+            </div>
+            <div class="form-group">
+              <label for="inqRemarks">Specific Queries (Hostel / Fees / Scholarship)</label>
+              <input type="text" id="inqRemarks" class="form-control"
+                placeholder="e.g. Need hostel and SSP scholarship info">
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Submit & Generate Official Inquiry Slip
+            </button>
+          </div>
+        </form>
+
+        <!-- Success & Printable Card -->
+        <div id="inquirySuccessCard" style="display: none;">
+          <div class="admission-slip-container animate-fade-in" id="printableSlipArea">
+            <div class="slip-header-brand">
+              <div class="slip-title">KARNATAKA HIGHER EDUCATION ADMISSION INQUIRY SLIP</div>
+              <small>Office of Centralized Student Guidance & Higher Education Connect</small>
+            </div>
+            <div class="slip-meta-grid">
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Reference ID</div>
+                <div class="slip-field-val" id="slipRefNo">KAR-948123</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Date of Generation</div>
+                <div class="slip-field-val" id="slipDate">-</div>
+              </div>
+              <div class="slip-field-box" style="grid-column: span 2;">
+                <div class="slip-field-lbl">Selected Institution</div>
+                <div class="slip-field-val" id="slipCollegeName">-</div>
+                <small id="slipCollegeAddress" style="color: #64748b;"></small><br>
+                <small>Helpline: <strong id="slipCollegePhone"></strong></small>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Applicant Name</div>
+                <div class="slip-field-val" id="slipStudentName">-</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Contact Number</div>
+                <div class="slip-field-val" id="slipStudentPhone">-</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Email Address</div>
+                <div class="slip-field-val" id="slipStudentEmail">-</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Target Course</div>
+                <div class="slip-field-val" id="slipTargetCourse">-</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Previous Aggregate Marks</div>
+                <div class="slip-field-val" id="slipPrevMarks">-</div>
+              </div>
+              <div class="slip-field-box">
+                <div class="slip-field-lbl">Native District</div>
+                <div class="slip-field-val" id="slipHomeTaluk">-</div>
+              </div>
+            </div>
+            <div class="slip-footer-instructions">
+              <strong>Instructions for Student:</strong> Present this inquiry slip along with your 10th/12th Marks Card
+              and Aadhaar copy at the college admissions desk or during KEA document verification.
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <button class="btn btn-primary" id="printInquirySlipBtn">
+              <i class="fas fa-print"></i> Print / Save PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SAVED / BOOKMARKED COLLEGES MODAL
+       ============================================================ -->
+  <div class="app-modal-overlay" id="bookmarksModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header-bar">
+        <span class="modal-header-title"><i class="fas fa-heart text-danger"></i> Saved / Favorite Colleges</span>
+        <button class="modal-close-btn" id="bookmarksModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body-scrollable" id="bookmarksModalBody">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PERSISTENT BOTTOM COMPARISON DOCK
+       ============================================================ -->
+  <div class="compare-floating-dock" id="compareDock">
+    <div class="compare-dock-label">
+      <i class="fas fa-balance-scale"></i> Compare (<span id="compareCountBadge">0</span>/3)
+    </div>
+    <div class="compare-items-wrap" id="compareItemsContainer">
+      <!-- Pills -->
+    </div>
+    <div class="compare-dock-actions">
+      <button class="btn btn-primary btn-sm" id="compareBtn">Compare Now</button>
+      <button class="btn btn-ghost btn-sm" id="clearCompareBtn">Clear</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       INTELLIGENT AI CHATBOT FLOATING WIDGET & DRAWER
+       ============================================================ -->
+  <!-- Floating Button -->
+  <button class="chat-floating-button" id="chatToggleBtn" aria-label="Open College Enquiry AI Chatbot"
+    title="Ask Karnataka Higher Education AI Bot">
+    <i class="fas fa-comment-dots"></i>
+    <span class="chat-notification-pulse" id="chatNotificationBadge"></span>
+  </button>
+
+  <!-- Expandable Chat Drawer -->
+  <div class="chat-drawer-container" id="chatDrawer" role="region" aria-label="Chatbot Window">
+    <!-- Chat Header -->
+    <div class="chat-header-bar">
+      <div class="chat-bot-profile">
+        <div class="bot-avatar-circle">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="bot-title-text">
+          <h4>Karnataka EduBot</h4>
+          <span class="bot-status-indicator"><i class="fas fa-circle"></i> Online • 4 Divisions AI</span>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="btn-icon" id="chatMuteVoiceBtn" title="Toggle Voice Output">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <button class="btn-icon" id="chatMinimizeBtn" title="Minimize Chat">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <button class="btn-icon" id="chatCloseBtn" title="Close Chat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="chat-messages-area" id="chatMessages">
+      <!-- Conversation Bubbles dynamically appended by JS -->
+    </div>
+
+    <!-- Quick Replies Bar -->
+    <div class="chat-quick-replies-bar" id="chatQuickReplies">
+      <!-- Chips rendered by chatbot-engine.js -->
+    </div>
+
+    <!-- Chat Input Bar -->
+    <div class="chat-input-bar">
+      <button class="btn-icon chat-voice-btn" id="chatVoiceBtn" title="Speak your query">
+        <i class="fas fa-microphone"></i>
+      </button>
+      <input type="text" id="chatInput" class="chat-text-input"
+        placeholder="Ask about colleges in Bengaluru, Belagavi, Kalaburagi, Mysuru..." autocomplete="off" />
+      <button class="btn-icon btn-primary" id="chatSendBtn" title="Send message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="app-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-info">
+          <div class="brand-logo-wrap mb-2">
+            <div class="brand-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="brand-text">
+              <h2>Karnataka EduConnect</h2>
+              <p>ಕರ್ನಾಟಕ ಉನ್ನತ ಶಿಕ್ಷಣ ಪೋರ್ಟಲ್</p>
+            </div>
+          </div>
+          <p>
+            The comprehensive higher education exploration platform and AI enquiry assistant covering all 4
+            Administrative Revenue Divisions of Karnataka: <strong>Bengaluru, Belagavi, Kalaburagi, and Mysuru</strong>
+            across 31 districts.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>The 4 Divisions</h5>
+          <ul class="footer-links-list">
+            <li><a href="javascript:void(0)" onclick="window.setDivisionFilter('bengaluru')"><i
+                  class="fas fa-city text-primary"></i> Bengaluru Division</a></li>
+            <li><a href="javascript:void(0)" onclick="window.setDivisionFilter('belagavi')"><i
+                  class="fas fa-fort-awesome text-success"></i> Belagavi Division</a></li>
+            <li><a href="javascript:void(0)" onclick="window.setDivisionFilter('kalaburgi')"><i
+                  class="fas fa-landmark-dome text-gold"></i> Kalaburagi Division</a></li>
+            <li><a href="javascript:void(0)" onclick="window.setDivisionFilter('mysuru')"><i
+                  class="fas fa-crown text-accent"></i> Mysuru Division</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Official Portals</h5>
+          <ul class="footer-links-list">
+            <li><a href="https://kea.kar.nic.in" target="_blank" rel="noopener">KEA KCET Portal <i
+                  class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://uucms.karnataka.gov.in" target="_blank" rel="noopener">UUCMS Degree Portal <i
+                  class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://ssp.postmatric.karnataka.gov.in" target="_blank" rel="noopener">SSP Scholarship Portal
+                <i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://vtu.ac.in" target="_blank" rel="noopener">VTU Belagavi <i
+                  class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://rguhs.ac.in" target="_blank" rel="noopener">RGUHS Health Sciences <i
+                  class="fas fa-external-link-alt"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Karnataka State Helpline</h5>
+          <p class="text-secondary text-sm mb-2"><i class="fas fa-map-marker-alt text-primary"></i> Department of Higher
+            Education, MS Building, Bengaluru - 560001</p>
+          <p class="text-secondary text-sm mb-2"><i class="fas fa-phone-alt text-success"></i> KEA Helpline: 080 -
+            23460460</p>
+          <p class="text-secondary text-sm mb-3"><i class="fas fa-envelope text-accent"></i>
+            helpdesk@karnatakaedu.gov.in</p>
+          <button class="btn btn-primary btn-xs" onclick="document.getElementById('chatToggleBtn').click()">
+            <i class="fas fa-robot"></i> Open AI Enquiry Assistant
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Karnataka Higher Education Connect Portal. Covering 4 Administrative Divisions: Bengaluru, Belagavi,
+          Kalaburagi, and Mysuru.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/colleges-data.js"></script>
+  <script src="js/chatbot-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
